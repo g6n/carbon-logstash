@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash:5.5.1
+FROM docker.elastic.co/logstash/logstash:5.5.2
 RUN logstash-plugin install logstash-input-beats
 RUN rm -f /usr/share/logstash/pipeline/logstash.conf
 ADD pipeline/ /usr/share/logstash/pipeline/
